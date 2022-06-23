@@ -25,7 +25,7 @@ public class ATMinterface
          amount.put(2458,100000); 
          
         Scanner in = new Scanner(System.in);          
-       // while(limit-->0)  
+       
         { 
             System.out.println("Welcome to our Bank ATM\nPlease Insert your Card"); 
             System.out.println("Kindly Enter Your 4 digit Pin");
@@ -54,7 +54,6 @@ public class ATMinterface
             String history=withdraw +"\tWithdrawn amount(-)\n";
             TransacationHistory=TransacationHistory.concat(history);
             System.out.println("Please collect your money\nRs:"+withdraw+"\nThe available balance in your account is");
-           // System.out.println( "The available balance in your account is");
              balance=amount.get(pin);
             System.out.printf("Rs:%d ",balance);  
          }  
@@ -111,14 +110,14 @@ public class ATMinterface
        { System.out.println("Sorry you are not registered for Internet Banking You can remove your card.\n Do you want to register with our bank??\nEnter Your Name");
         String name=in.next();
         System.out.println("Enter your pin number");
-      // pin=in.nextInt(); 
+     
        while(entry>0)
        { pin=in.nextInt(); 
        
         if(map.containsKey(pin))
        { 
         System.out.println("Sorry the pin is already in use\nEnter the other pin Number");  
-      // pin=in.nextInt();}
+   
         } else
        { System.out.println("Enter the amount to be Deposited in Rs:");
         deposit=in.nextInt();
